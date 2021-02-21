@@ -27,7 +27,8 @@ No requirements.
 ## Example. 
 ```aidl
 module "vpc_peering" {
-  source           = "../"
+  source  = "ahmedzidan/vpc-peering/aws"
+  version = "1.0.0"
   accepter_region  = var.region
   accepter_vpc_id  = var.accepter_vpc_id
   requester_vpc_id = var.vpc_id
